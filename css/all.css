@@ -1,0 +1,605 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Microsoft JhengHei;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* layout */
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.clearFix {
+    clear: both;
+}
+
+/* header */
+.header {
+    height: 560px;
+}
+
+.headerMenu {
+    padding: 0px 40px;
+    background: rgba(100, 100, 100, 0.3);
+}
+
+.headerMenu .logo {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url(../img/logo.png);
+    width: 170px;
+    height: 36px;
+    margin-top: 20px;
+    float: left;
+}
+
+.headerMenu ul {
+    float: right;
+}
+
+.headerMenu ul li {
+    float: left;
+    margin: 0 10px;
+    padding: 20px 0;
+    line-height: 36px;
+}
+
+.headerMenu ul li a{
+    color: #fff;
+    padding: 0 15px;
+}
+
+.headerMenu ul li a:hover {
+    border-bottom: #00cc99 5px solid;
+    padding-bottom: 21px;
+}
+
+.slogan {
+    font-size: 50px;
+    color: #fff;
+    margin: 90px 40px 50px 40px;
+}
+
+.sloganTextCenter {
+    text-align: center;
+}
+
+.sloganLeft {
+    float: left;
+}
+
+.sloganPs {
+    font-size: 25px;
+}
+
+.sloganColor {
+    color: #00cc99;
+}
+
+.registered {
+    width: 100px;
+    background: #00cc99;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 40px;
+    display: block;
+    position: relative;
+}
+
+.arrow {
+    display: block;
+    border-top: 2px;
+    border-right: 2px;
+    height: 11px;
+    width: 11px;
+    border-color: #fff;
+    border-style: solid;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+}
+
+/* content */
+.lTitle {
+    margin: 30px 0;
+    position: relative;
+}
+
+.lTitle .cTitle {
+    color: #00cc99;
+    font-size: 32px;
+    float: left;
+}
+
+.lTitle .psTitle {
+    color: #9b9b9b;
+    float: left;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+input[type="submit"] {
+    float: right;
+    background: #00cc99;
+    padding: 10px 35px;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    padding: 30px;
+    background: #323228;
+}
+
+.footerLogo {
+    float: left;
+}
+
+.footerLogo h2 {
+    width: 170px;
+    height: 36px;
+    background: url(../img/logo.png);
+}
+
+.footer h5 {
+    margin-top: 5px;
+    color: #9b9b9b;
+    width: 170px;
+    text-align: right;
+}
+
+.footer ul {
+    float: right;
+}
+
+.footer ul li {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* home */
+.headerHome {
+    background: url(../img/homeBg.png);
+}
+
+.homeContent {
+    padding: 50px 50px 30px 50px;
+}
+
+.homeContent .lTitle a {
+    padding: 5px 10px;
+    border: 2px #00cc99 solid;
+    border-radius: 5px;
+    text-align: center;
+    color: #00cc99;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.homeIntro {
+    width: 964px;
+    margin: 0 auto 60px auto;
+}
+
+.homeIntro ul li a img {
+    display: block;
+    margin: 0 auto;
+}
+
+.homeIntro ul li a {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 295px;
+    box-shadow: 0 3px 5px gray;
+    float: left;
+}
+
+.homeIntro ul li a:hover {
+    box-shadow: 0 5px 5px gray;
+}
+
+.homeIntro ul li a h3 {
+    text-align: center;
+    color: #4a4a4a;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.homeIntro ul li a p {
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+.homeChart table {
+    margin: 30px auto;
+}
+
+.homeChart table th,
+.homeChart table td {
+    width: 200px;
+    margin: 0 20px;
+    padding: 15px 20px;
+    text-align: center;
+    color: #4a4a4a;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.homeChart table th {
+    background: #ebebeb;
+}
+
+.homeChart .mark {
+    color: #00cc99;
+}
+
+.joinUs {
+    padding: 100px 50px;
+    background: #ebebeb;
+}
+
+.joinUs h3 {
+    color: #323223;
+    font-size: 32px;
+    line-height: 1.8;
+    float: left;
+}
+
+.joinUsInfor {
+    float: right;
+    margin: 0 50px;
+}
+
+.joinUsInfor input[type="text"] {
+    width: 350px;
+    display: block;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0px;
+    font-size: 18px;
+}
+
+.joinUsInfor input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/* course */
+.headerCourse {
+    background: url(../img/courseBg.png);
+}
+
+.html5css3 {
+    float: right;
+    margin: 45px 45px;
+}
+
+.html5css3 img {
+    margin-right: 20px;
+}
+
+.courseContent {
+    width: 650px;
+    margin: 50px auto;
+}
+
+.courseContent img {
+    display: block;
+    float: left;
+}
+
+.teacherName {
+    line-height: 1.5;
+    float: left;
+}
+
+.teacherIntro {
+    margin: 30px 0;
+}
+
+.teacherIntroInfor {
+    float: right;
+    margin: 55px 100px 55px 0;
+}
+
+.teacherIntroInfor ul {
+    float: left;
+    list-style-type: disc;
+    line-height: 1.5;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+.teacherIntroInfor ul li {
+    padding-left: 20px;
+}
+
+.courseSpecial {
+    margin-bottom: 60px;
+}
+
+.courseSpecial ol {
+    list-style-type: decimal;
+    margin-top: 20px;
+}
+
+.courseSpecial ol li {
+    line-height: 1.3;
+    padding-left: 20px;
+    margin-left: 17px;
+    color: #323223;
+}
+
+.outline table {
+    margin: 15px 0;
+    width: 650px;
+}
+
+.outlineTableA,
+.outlineTableB {
+    padding: 20px 40px;
+}
+
+.outlineTableA {
+    background: #ebebeb;
+    color: #323223;
+}
+
+.outlineTableB {
+    color: #9b9b9b;
+}
+
+.courseJoinUs {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.joinUsButton {
+    float: right;
+    margin-top: 60px;
+}
+
+/* faq */
+.headerFaq {
+    background: url(../img/faqBg.png);
+}
+
+.headerFaq input[type="text"] {
+    padding: 15px;
+    width: 500px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.faqSearch {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 550px;
+}
+
+/*利用偽元素在後面加入icon*/
+.faqSearch::after {
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    font-size: 22px;
+    position: absolute;
+    right: 35px;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+.faqContent {
+    width: 750px;
+    margin: 50px auto;
+    line-height: 1.5;
+}
+
+.question {
+    margin-top: 20px;
+}
+
+.answer {
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+.installment {
+    list-style-type: decimal;
+    margin-left: 28px;
+}
+
+.installment li {
+    color: #9b9b9b;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 17px;
+}
+
+.refund {
+    list-style-type: disc;
+    margin-left: 28px;
+}
+
+.refund li {
+    color: #9b9b9b;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 17px;
+}
+
+.question .answer a {
+    color: #00cc99;
+}
+
+.refundAttention {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.faqJoinUs form {
+    float: right;
+}
+
+.faqJoinUs form input[type="text"],
+.faqJoinUs form textarea {
+    display: block;
+    width: 400px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 18px;
+}
